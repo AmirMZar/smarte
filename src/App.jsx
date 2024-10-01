@@ -10,7 +10,7 @@ function App() {
   const router = createBrowserRouter([
     {path:'/' , element:<LayOut/> , 
       children:[
-        {path:'/' , element:<Landing/>}
+        {path:'/' , element:<Landing/>},
       ]
     }
   ])
