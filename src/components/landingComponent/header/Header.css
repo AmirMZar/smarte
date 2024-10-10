@@ -36,7 +36,7 @@
 
 .header-title {
   margin: 0 15px; /* فاصله بین عناوین */
-  font-size: 18px; /* اندازه فونت عناوین */
+  font-size: 16px; /* اندازه فونت عناوین */
   color: #333; /* رنگ متن عنوان */
   transition: color 0.3s; /* انیمیشن تغییر رنگ */
 }
