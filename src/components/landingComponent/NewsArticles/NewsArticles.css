@@ -1,0 +1,82 @@
+.title-container {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* برای وسط قرار دادن محتوا */
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto; /* برای وسط قرار دادن کل بلوک در صفحه */
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 10px; /* برای فاصله بین تایتل و دایره */
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #10c6c6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-text {
+    color: #10c6c6; /* رنگ متن داخل دایره */
+    font-weight: bold;
+    font-size: 16px;
+}
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 5px; /* فاصله از بخش بالا */
+    font-size: 16px;
+    color: gray;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* سه ستون برای گالری */
+    gap: 10px; /* فاصله بین کادرها */
+    margin: 20px auto; /* برای قرار گرفتن گالری در وسط صفحه */
+    max-width: 1000px; /* حداکثر عرض گالری */
+    padding: 10px; /* فاصله داخلی */
+}
+
+.rectangle {
+    background-color: #10c6c6;
+    height: 150px; /* ارتفاع مستطیل */
+    grid-column: span 2; /* مستطیل دو ستون را اشغال می‌کند */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.square {
+    background-color: #333;
+    height: 180px; /* ارتفاع و عرض یکسان برای مربع */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* گالری در صفحات کوچک‌تر به یک ستون تبدیل می‌شود */
+        max-width: 100%; /* عرض 100% در صفحات کوچک */
+    }
+
+    .rectangle, .square {
+        grid-column: span 1; /* کادرها در صفحات کوچک‌تر فقط یک ستون اشغال می‌کنند */
+    }
+}
