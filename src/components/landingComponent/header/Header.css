@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* رنگ پس‌زمینه */
+    border-bottom: 1px solid #dee2e6; /* خط پایین */
+  }
+  
+  .header-left,
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-center {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .header-title {
+    margin: 0 15px; /* فاصله بین عناوین */
+    font-size: 18px; /* اندازه فونت عناوین */
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* اندازه فونت دکمه‌ها */
+    margin: 0 10px; /* فاصله بین دکمه‌ها */
+  }
+  
+  .logo {
+    height: 50px; /* ارتفاع لوگو */
+  }
+  
