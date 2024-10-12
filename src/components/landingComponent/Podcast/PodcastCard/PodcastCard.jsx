@@ -2,7 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { FaHeart, FaEye, FaClock } from 'react-icons/fa';
-import '../Podcast.css'; // وارد کردن فایل استایل
+import './PodcastCard.css'; // وارد کردن فایل استایل
 
 // به جای interface از propTypes برای تایپ چکینگ استفاده می‌کنیم
 import PropTypes from 'prop-types';
