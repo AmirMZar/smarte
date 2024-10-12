@@ -84,4 +84,35 @@
    position: relative;
    bottom: 30px;
   }
-  
+/* استایل دکمه مشاهده بیشتر */
+.button-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* قرار دادن دکمه در مرکز */
+    margin-top: 20px; /* فاصله از بخش بالا */
+}
+
+.view-more-btn {
+    background-color: transparent;
+    border: none;
+    color: #6c757d; /* رنگ خاکستری */
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* متن و فلش را در یک خط وسط‌چین می‌کند */
+    transition: color 0.3s ease; /* اضافه کردن انیمیشن نرم برای تغییر رنگ */
+}
+
+.view-more-btn:hover {
+    color: #5a6268; /* رنگ تیره‌تر در حالت هاور */
+}
+
+.arrow {
+    font-size: 17px;
+    margin: 5px; /* فاصله بین فلش و متن */
+    color: #6c757d; /* رنگ خاکستری فلش */
+}
+
+.arrow:hover {
+    color: #5a6268; /* تغییر رنگ فلش هم در حالت هاور */
+}

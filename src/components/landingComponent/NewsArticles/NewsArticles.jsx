@@ -14,21 +14,25 @@ const NewsArticles = () => {
             <div className="subtitle"> !خودت را با خبر کن</div>
 
             {/* گالری تصاویر */}
-           {/* گالری تصاویر */}
-<div className="gallery">
-    <div className="square"></div>
-    <div className="square"></div>
-    <div className="rectangle"></div>
-    <div className="rectangle"></div>
-    <div className="square mt-custom"></div>  
-    <div className="square mt-custom"></div> 
-</div>
+            <div className="gallery">
+                <div className="square"></div>
+                <div className="square"></div>
+                <div className="rectangle"></div>
+                <div className="rectangle"></div>
+                <div className="square mt-custom"></div>  
+                <div className="square mt-custom"></div> 
+            </div>
 
+          {/* دکمه مشاهده بیشتر */}
+            <div className="button-section mt-custom">
+                <button className="view-more-btn">
+                <span className="arrow"> &lt; </span> {/* فلش > */}
+
+                         مشاهده بیشتر
+                </button>
+            </div>
         </div>
     );
 }
 
 export default NewsArticles;
-
-
-
