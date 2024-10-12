@@ -1,0 +1,111 @@
+/* استایل کلی فوتر */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+/* استایل بخش لگو اصلی */
+.footer-logo {
+    flex-basis: 20%;
+}
+.main-logo {
+    max-width: 150px; /* اندازه لگو */
+}
+
+/* استایل بخش توضیحات و شبکه‌های اجتماعی */
+.footer-content {
+    flex-basis: 40%;
+    text-align: right;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* استایل برای دکمه‌های شبکه‌های اجتماعی */
+.social-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #555;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #777; /* رنگ هنگام هاور */
+}
+
+/* استایل لینک‌های فوتر */
+.footer-links {
+    flex-basis: 30%;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* دو ستون */
+    gap: 10px;
+    text-align: right;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ddd; /* رنگ هنگام هاور */
+}
+
+/* استایل نشان ملی ثبت */
+.footer-national-logo {
+    flex-basis: 10%;
+    text-align: left;
+}
+
+.national-logo {
+    max-width: 100px; /* اندازه لگو ملی */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-content, .footer-links, .footer-national-logo {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+}
