@@ -6,7 +6,7 @@ import './PodcastCard.css'; // Import CSS file
 
 // Sample podcast data
 const podcasts = [
-    { date: "21 مهر 1403", title: "پادکست ۱", description: "توضیحات پادکست ۱", time: "00:45:30", views: 250, likes: 102 },
+    { date: "21 مهر 1403", title: "  یادگیری توسعه وب با ری اکت", description: " ری اکت به عنوان یک از محبوب ترین کتابخانه های جاوا اسکریپتی و یکی از مهمترین ابزارهای توسعه وب شناخته می شود ", time: "00:45:30", views: 250, likes: 102 },
     { date: "22 مهر 1403", title: "پادکست ۲", description: "توضیحات پادکست ۲", time: "01:15:45", views: 340, likes: 205 },
     { date: "23 مهر 1403", title: "پادکست ۳", description: "توضیحات پادکست ۳", time: "00:35:20", views: 150, likes: 78 },
     { date: "24 مهر 1403", title: "پادکست ۴", description: "توضیحات پادکست ۴", time: "00:55:10", views: 420, likes: 315 },
@@ -28,6 +28,11 @@ const PodcastCard = () => {
 
     const podcast = podcasts[currentPodcastIndex]; // Get current podcast
 
+    // Function to handle dot click
+    const handleDotClick = (index) => {
+        setCurrentPodcastIndex(index); // Set current podcast index to clicked dot index
+    };
+
     return (
         <div 
             className="custom-box" 
@@ -40,6 +45,7 @@ const PodcastCard = () => {
                     <div 
                         key={index} 
                         className={`dot ${currentPodcastIndex === index ? 'active' : ''}`} // Active dot for the current podcast
+                        onClick={() => handleDotClick(index)} // Call handleDotClick on dot click
                     />
                 ))}
             </div>
