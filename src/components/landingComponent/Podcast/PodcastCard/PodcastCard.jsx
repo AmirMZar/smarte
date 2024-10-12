@@ -1,47 +1,71 @@
 // PodcastCard.jsx
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaHeart, FaEye, FaClock } from 'react-icons/fa';
-import './PodcastCard.css'; // وارد کردن فایل استایل
+import './PodcastCard.css'; // Import CSS file
 
-// به جای interface از propTypes برای تایپ چکینگ استفاده می‌کنیم
-import PropTypes from 'prop-types';
+// Sample podcast data
+const podcasts = [
+    { date: "21 مهر 1403", title: "پادکست ۱", description: "توضیحات پادکست ۱", time: "00:45:30", views: 250, likes: 102 },
+    { date: "22 مهر 1403", title: "پادکست ۲", description: "توضیحات پادکست ۲", time: "01:15:45", views: 340, likes: 205 },
+    { date: "23 مهر 1403", title: "پادکست ۳", description: "توضیحات پادکست ۳", time: "00:35:20", views: 150, likes: 78 },
+    { date: "24 مهر 1403", title: "پادکست ۴", description: "توضیحات پادکست ۴", time: "00:55:10", views: 420, likes: 315 },
+];
 
-const PodcastCard = ({ date, title, description, time, views, likes }) => {
+const PodcastCard = () => {
+    const [currentPodcastIndex, setCurrentPodcastIndex] = useState(0);
+    const [isHovered, setIsHovered] = useState(false); // State to track hover status
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (!isHovered) {
+                setCurrentPodcastIndex((prevIndex) => (prevIndex + 1) % podcasts.length); // Loop through podcasts
+            }
+        }, 5000); // Change every 5 seconds
+
+        return () => clearInterval(interval); // Clear interval on unmount
+    }, [isHovered]); // Run effect again if isHovered changes
+
+    const podcast = podcasts[currentPodcastIndex]; // Get current podcast
+
     return (
-        <div className="custom-box">
-            <div className="date">تاریخ: {date}</div> {/* تاریخ */}
-            <h2 className="box-title">{title}</h2> {/* عنوان */}
-            <p className="box-description">{description}</p> {/* توضیحات */}
+        <div 
+            className="custom-box" 
+            onMouseEnter={() => setIsHovered(true)} // Set hover to true
+            onMouseLeave={() => setIsHovered(false)} // Set hover to false
+        >
+            {/* Vertical dots section */}
+            <div className="dots-container">
+                {podcasts.map((_, index) => (
+                    <div 
+                        key={index} 
+                        className={`dot ${currentPodcastIndex === index ? 'active' : ''}`} // Active dot for the current podcast
+                    />
+                ))}
+            </div>
+
+            <div className="date">تاریخ: {podcast.date}</div>
+            <h2 className="box-title">{podcast.title}</h2>
+            <p className="box-description">{podcast.description}</p>
             <div className="right-box"></div>
 
-            {/* بخش پایین سمت چپ */}
-            <div className="stats"> 
+            {/* Statistics section */}
+            <div className="stats">
                 <span className="stat-item">
-                    <span className="timer">{time}</span>
-                    <FaClock className="icon" /> {/* Clock icon */}
+                    <span className="timer">{podcast.time}</span>
+                    <FaClock className="icon" />
                 </span>
                 <span className="stat-item">
-                    <span className="stat-number">{views}</span>
-                    <FaEye className="icon" /> {/* Eye icon */}
+                    <span className="stat-number">{podcast.views}</span>
+                    <FaEye className="icon" />
                 </span>
                 <span className="stat-item">
-                    <span className="stat-number">{likes}</span>
-                    <FaHeart className="icon" /> {/* Heart icon */}
+                    <span className="stat-number">{podcast.likes}</span>
+                    <FaHeart className="icon" />
                 </span>
             </div>
         </div>
     );
-};
-
-// تعریف propTypes برای تایپ چکینگ در جاوااسکریپت
-PodcastCard.propTypes = {
-    date: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
 };
 
 export default PodcastCard;

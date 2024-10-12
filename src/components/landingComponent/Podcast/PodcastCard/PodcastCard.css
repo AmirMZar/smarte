@@ -8,10 +8,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
 }
+
 /* استایل برای کادر راست */
 .right-box {
     background-color: #333;
-    /* border: 1px solid #ccc; */
     border-radius: 5px;
     width: 170px;
     float: right;
@@ -39,6 +39,7 @@
     max-width: 545px;
     margin-left: 100px;
 }
+
 /* استایل برای بخش آمار */
 .stats {
     display: flex; /* چیدمان افقی */
@@ -69,12 +70,37 @@
     color: gray; /* رنگ آیکون‌ها */
 }
 
-
 /* استایل برای تایمر */
 .timer {
     margin-right: 2px; /* فاصله بین تایمر و آیکون */
     font-size: 14px; /* اندازه فونت */
 }
 
+/* استایل برای نقاط عمودی */
+.dots-container {
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 1000px;
+    left: 430px;
+}
 
+/* استایل برای هر نقطه */
+.dot {
+    width: 7px; /* عرض نقطه */
+    height: 7px; /* ارتفاع نقطه */
+    border-radius: 50%; /* گرد کردن نقاط */
+    background-color: #fff; /* رنگ پیش‌فرض */
+    transition: transform 0.3s, background-color 0.3s; /* انیمیشن برای تغییرات */
+}
 
+/* استایل برای نقطه فعال */
+.dot.active {
+    /* transform: scale(1.5); بزرگتر شدن نقطه فعال */
+    background-color: #10c6c6; /* تغییر رنگ برای نقطه فعال */
+    height: 20px;
+    width: 8px;
+    border-radius: 40%;
+}
