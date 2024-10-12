@@ -14,14 +14,16 @@ const NewsArticles = () => {
             <div className="subtitle"> !خودت را با خبر کن</div>
 
             {/* گالری تصاویر */}
-            <div className="gallery">
-                <div className="rectangle"></div>
-                <div className="square"></div>
-                <div className="square"></div>
-                <div className="square"></div>
-                <div className="square"></div>
-                <div className="rectangle"></div>
-            </div>
+           {/* گالری تصاویر */}
+<div className="gallery">
+    <div className="square"></div>
+    <div className="square"></div>
+    <div className="rectangle"></div>
+    <div className="rectangle"></div>
+    <div className="square mt-custom"></div>  
+    <div className="square mt-custom"></div> 
+</div>
+
         </div>
     );
 }

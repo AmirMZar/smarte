@@ -80,3 +80,8 @@
         grid-column: span 1; /* کادرها در صفحات کوچک‌تر فقط یک ستون اشغال می‌کنند */
     }
 }
+.mt-custom {
+   position: relative;
+   bottom: 30px;
+  }
+  
