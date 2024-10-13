@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    /* height: 200px; */
     background-color: #b5efef; /* رنگ پس‌زمینه */
     padding: 20px 0;
+    width: 100%;
   }
   
   .footer-logo img {
@@ -22,12 +23,12 @@
   .footer-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* فاصله بین دکمه‌ها */
-    margin-bottom: 0px;
+    gap: 15px;
+    margin-top: -21px;
   }
   
   .footer-button {
-    background-color: #0e666681; /* پس‌زمینه نیمه شفاف */
+    background-color: #0a7f7f; /* پس‌زمینه نیمه شفاف */
     border: 1px solid #fff;
     color: white;
     border: none;
@@ -49,17 +50,80 @@
   .footer-text {
     font-size: 13px;
     color: #6f6e6e;
-    margin-left: auto; /* متن را به سمت راست می‌برد */
-    padding-right: 60px; /* فاصله داخلی */
-    max-width: 420px; /* حداکثر عرض */
+    margin-left: auto;
+    margin-top: 60px;
+    max-width: 484px;
+    padding-right: 122px;
   }
   
   .footer-heading {
-    margin-left: auto; /* متن را به سمت راست می‌برد */
-    font-size: 16px; /* اندازه متن */
-    color: #333; /* رنگ متن */
-    padding-right: 60px; /* فاصله داخلی */
-    max-width: 345px; /* حداکثر عرض */
-    margin-top: 10px; /* فاصله بین تگ p و h3 */
+    margin-left: auto;
+    font-size: 16px;
+    color: #333;
+    max-width: 404px;
+    margin-top: 15px;
+    padding-right: 128px;
   }
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* دو ستون مساوی */
+    column-gap: 20px; /* فاصله بین ستون‌ها */
+    row-gap: 5px; /* فاصله بین ردیف‌ها */
+    list-style-type: none; /* حذف نقاط پیش‌فرض */
+    padding: 0;
+    margin-right: auto;
+    margin-top: -125px;
+    padding-left: 340px;
+    text-align: right; /* راست‌چین کردن کل لیست */
+  }
+  
+  .footer-list li {
+    position: relative;
+    padding-right: 0; /* حذف فاصله بین نقطه و متن */
+    font-size: 15px;
+  }
+  
+  .footer-list li::before {
+    content: '•'; /* نقطه قبل از آیتم */
+    position: absolute;
+    right: -10px; /* تنظیم موقعیت نقطه */
+    color: #000; /* رنگ نقطه */
+  }
+  
+  
+  /* استایل جدید برای کادر تصویر */
+.image-box {
+    border: #fff 1px solid;
+    width: 111px;
+    height: 111px;
+    margin-top: -100px;
+    margin-right: auto;
+    padding-left: 172px;
+    position: relative;
+    right: -114px;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تصویر متناسب با کادر */
+  }
+  .footer-rights-box {
+    width: 100%;
+    background-color: #0a7f7f;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  /* margin-top: 20px; */
+  position: relative;
+  top: 20px;
+  }
+  
+  .footer-rights {
+    font-size: 14px; /* اندازه فونت */
+    color: #ffffff; /* رنگ متن */
+  }
+  
+  
+  
   

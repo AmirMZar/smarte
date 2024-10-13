@@ -13,8 +13,23 @@ const Footer = () => {
       <p className="footer-text">
         مجموعه آموزشی فلان فعالیت خود را از سال ۱۳۹۰ آغاز کرده است و امروز به بزرگترین کلونی برنامه نویسی شمال کشور تبدیل شده است
       </p>
-      <h3 className="footer-heading">ساری ، میدان خــزر ، جــاده فــرح آباد ، جنب مجتمع دنیای آرزو    011 - 43332000</h3> {/* تگ h اضافه شده */}
+      <h3 className="footer-heading">ساری ، میدان خــزر ، جــاده فــرح آباد ، جنب مجتمع دنیای آرزو    011 - 43332000</h3>
+      <ul className="footer-list">
+          <li> اساتید برتر</li>
+          <li> دوره ها</li>
+          <li> دسته بندی ها </li>
+          <li> اخبار مقالات </li>
+          <li> خدمات مه </li>
+          <li> پادکست ها </li>
+          <li> ورود به حساب </li>
+          <li> تماس با ما</li>
+        </ul>
+          {/* کادر جدید برای تصویر */}
+      <div className="image-box">
+        <img src="/path-to-your-image.png"  />
+      </div>
       <div className="footer-content">
+
         <div className="footer-buttons">
           <button className="footer-button">
             <FontAwesomeIcon icon={faInstagram} />
@@ -30,6 +45,11 @@ const Footer = () => {
           </button>
         </div>
       </div>
+      <div className="footer-rights-box">
+    <p className="footer-rights">
+      کلیه حقوق این وب سایت متعلق به آموزشگاه فلان می‌باشد
+    </p>
+  </div>
     </footer>
   );
 };
