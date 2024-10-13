@@ -1,6 +1,5 @@
 const HeroSection = () => {
     return ( <>
-        hello
     </> );
 }
  
