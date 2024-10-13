@@ -33,7 +33,7 @@ const Header = () => {
                 </button>
 
                 <button className="nav-button cart-button">
-                    <svg
+                    {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="none"
@@ -45,7 +45,8 @@ const Header = () => {
                         <circle cx="10" cy="21" r="1" />
                         <circle cx="17" cy="21" r="1" />
                         <path d="M8 2v-4h2v4h-2z" />
-                    </svg>
+                    </svg> */}
+                    <img src='/images/Shopping Bag.png'></img>
                 </button>
 
                 <button className="nav-button heart-button">
@@ -70,7 +71,7 @@ const Header = () => {
                 ))}
             </div>
             <div className="header-right">
-                <img src="/path/to/logo.png" alt="Logo" className="logo" />
+                <img src="/images/logo.png" alt="Logo" className="logo" />
             </div>
         </header>
     );

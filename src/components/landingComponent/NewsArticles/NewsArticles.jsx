@@ -15,12 +15,24 @@ const NewsArticles = () => {
 
             {/* گالری تصاویر */}
             <div className="gallery">
-                <div className="square"></div>
-                <div className="square"></div>
-                <div className="rectangle"></div>
-                <div className="rectangle"></div>
-                <div className="square mt-custom"></div>  
-                <div className="square mt-custom"></div> 
+                <div className="square">
+                    <img src='/images/Rectangle 37.png'></img>
+                </div>
+                <div className="square">
+                <img src='/images/Rectangle 38.png'></img>
+                </div>
+                <div className="rectangle">
+                <img src='/images/Rectangle 41.png'></img>
+                </div>
+                <div className="rectangle">
+                <img src='/images/Rectangle 40.png'></img>
+                </div>
+                <div className="square mt-custom">
+                <img src='/images/Rectangle 42.png'></img>
+                </div>  
+                <div className="square mt-custom">
+                <img src='/images/Rectangle 43.png'></img>
+                </div> 
             </div>
 
           {/* دکمه مشاهده بیشتر */}

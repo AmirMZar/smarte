@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img src="/path-to-your-logo.png" alt="Logo" />
+      <img src="/images/logo.png" alt="Logo" className="logo" />
       </div>
       <p className="footer-text">
         مجموعه آموزشی فلان فعالیت خود را از سال ۱۳۹۰ آغاز کرده است و امروز به بزرگترین کلونی برنامه نویسی شمال کشور تبدیل شده است
@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
           {/* کادر جدید برای تصویر */}
       <div className="image-box">
-        <img src="/path-to-your-image.png"  />
+        <img src="/images/samandehi-ezgif 1.png"  />
       </div>
       <div className="footer-content">
 
