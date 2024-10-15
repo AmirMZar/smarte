@@ -78,6 +78,7 @@
     color: white;
     font-size: 18px;
     position: relative;
+    top:10px;
 }
 .rectangle-images {
     height: 100%; 
@@ -99,7 +100,7 @@
 }
 .mt-custom {
     position: relative;
-    bottom: 68px;
+    bottom: 49px;
 }
 
 /* تنظیمات گالری برای دستگاه‌های کوچکتر */
@@ -130,6 +131,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     cursor: pointer;
+    cursor: url(images/Vector.png),auto;
   }
   .overlay-rectangle {
     position: absolute;
@@ -144,7 +146,7 @@
     background-color: rgba(0, 0, 0, 0.356);
     opacity: 0;
     transition: opacity 0.3s ease;
-    cursor: pointer;
+    cursor: url(images/Vector.png),auto;
   }
   .image-container:hover img {
     opacity: 0.8; /* تصویر محو می‌شود */
