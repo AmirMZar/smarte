@@ -1,3 +1,4 @@
+/* استایل برای بخش عنوان */
 .title-container {
     background-color: #ffffff;
     padding: 10px 20px;
@@ -12,7 +13,7 @@
 .title {
     font-size: 22px;
     font-weight: bold;
-    margin-right: 10px; /* برای فاصله بین تایتل و دایره */
+    margin-right: 10px; /* فاصله بین تایتل و دایره */
 }
 
 .circle {
@@ -30,6 +31,8 @@
     font-weight: bold;
     font-size: 16px;
 }
+
+/* استایل برای زیرعنوان */
 .subtitle {
     display: flex;
     align-items: center;
@@ -38,18 +41,35 @@
     font-size: 16px;
     color: gray;
 }
+
+/* استایل برای گالری */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* سه ستون برای گالری */
+    grid-template-columns: repeat(4, 1fr); /* چهار ستون برای گالری */
     gap: 10px; /* فاصله بین کادرها */
     margin: 20px auto; /* برای قرار گرفتن گالری در وسط صفحه */
     max-width: 1000px; /* حداکثر عرض گالری */
     padding: 10px; /* فاصله داخلی */
 }
 
+/* استایل برای مربع ها */
+.square {
+    /* background-color: #333; */
+    height: 250px; /* ارتفاع و عرض یکسان برای مربع */
+    width: 250px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+
 .rectangle {
-    background-color: #10c6c6;
-    height: 150px; /* ارتفاع مستطیل */
+    /* background-color: #10c6c6; */
+    height: 180px; /* ارتفاع مستطیل */
     grid-column: span 2; /* مستطیل دو ستون را اشغال می‌کند */
     border-radius: 8px;
     display: flex;
@@ -57,19 +77,35 @@
     align-items: center;
     color: white;
     font-size: 18px;
+    position: relative;
+}
+.rectangle-images {
+    height: 100%; 
+    width: 100%;
+}
+/* استایل برای توضیحات زیر تصاویر */
+.image-caption {
+    position: absolute;
+    bottom: 10px; /* موقعیت متن از پایین تصویر */
+    /* left: 0; */
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* پس‌زمینه شفاف برای بهتر خواندن متن */
+    padding: 5px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+   
+
 }
 
-.square {
-    background-color: #333;
-    height: 250px; /* ارتفاع و عرض یکسان برای مربع */
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 18px;
+.mt-custom {
+    position: relative;
+    bottom: 68px;
 }
 
+/* تنظیمات گالری برای دستگاه‌های کوچکتر */
 @media (max-width: 768px) {
     .gallery {
         grid-template-columns: 1fr; /* گالری در صفحات کوچک‌تر به یک ستون تبدیل می‌شود */
@@ -80,10 +116,7 @@
         grid-column: span 1; /* کادرها در صفحات کوچک‌تر فقط یک ستون اشغال می‌کنند */
     }
 }
-.mt-custom {
-   position: relative;
-   bottom: 100px;
-  }
+
 /* استایل دکمه مشاهده بیشتر */
 .button-section {
     display: flex;
