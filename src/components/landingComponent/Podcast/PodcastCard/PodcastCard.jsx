@@ -53,7 +53,9 @@ const PodcastCard = () => {
             <div className="date">تاریخ: {podcast.date}</div>
             <h2 className="box-title">{podcast.title}</h2>
             <p className="box-description">{podcast.description}</p>
-            <div className="right-box"></div>
+            <div className="right-box">
+                <img src='/images/Rectangle 36.png'></img>
+            </div>
 
             {/* Statistics section */}
             <div className="stats">

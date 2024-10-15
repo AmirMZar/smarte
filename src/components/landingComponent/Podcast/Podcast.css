@@ -1,8 +1,25 @@
-/* استایل برای بخش عنوان پادکست */
 .title-section {
+    position: relative; /* برای استفاده از ::before */
     text-align: center; /* وسط‌چین کردن متن */
     margin: 20px 0; /* فاصله از بالا و پایین */
+    z-index: 1; /* اطمینان از اینکه محتوا روی لایه‌ تصویر نمایش داده شود */
 }
+
+.title-section::before {
+    content: ''; /* ایجاد لایه‌ی پس‌زمینه */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/backgroundbody.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3; /* شفافیت پس‌زمینه */
+    z-index: -1; /* این لایه زیر محتوا قرار می‌گیرد */
+}
+
 
 /* استایل برای کانتینر پادکست */
 .podcast-container {
