@@ -97,6 +97,7 @@
     padding: 5px 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: url(images/Vector.png),auto;
 }
 .mt-custom {
     position: relative;
@@ -168,7 +169,7 @@
    height: 25px;
    width: 100px;
     font-size: 15px;
-    cursor: pointer;
+    cursor: url(images/Vector.png),auto;
     border-radius: 5px;
   }
 /* استایل دکمه مشاهده بیشتر */
