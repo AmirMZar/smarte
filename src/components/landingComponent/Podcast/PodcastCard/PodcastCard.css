@@ -3,7 +3,7 @@
     height: 270px;
     background: linear-gradient(to right, rgba(255, 165, 0, 0.5), rgba(135, 206, 235, 0.8)); /* افزایش نسبت آبی */
     border-radius: 25px;
-    border-top-left-radius: 200px; /* شعاع گوشه سمت چپ بالا */
+    border-top-left-radius: 200px; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 50px auto;

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
-    const [activeTitle, setActiveTitle] = useState('صفحه نخست'); // عنوان پیش‌فرض فعال
+    const [activeTitle, setActiveTitle] = useState('صفحه نخست'); 
 
     const titles = [
         'تماس با ما',
