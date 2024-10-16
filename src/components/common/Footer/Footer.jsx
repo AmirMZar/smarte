@@ -24,7 +24,6 @@ const Footer = () => {
           <li> ورود به حساب </li>
           <li> تماس با ما</li>
         </ul>
-          {/* کادر جدید برای تصویر */}
       <div className="image-box">
         <img src="/images/samandehi-ezgif 1.png"  />
       </div>

@@ -33,19 +33,6 @@ const Header = () => {
                 </button>
 
                 <button className="nav-button cart-button">
-                    {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="gray"
-                        strokeWidth="2"
-                        className="cart-icon"
-                    >
-                        <path d="M7 4h14l-1.5 9H8.5L7 4z" />
-                        <circle cx="10" cy="21" r="1" />
-                        <circle cx="17" cy="21" r="1" />
-                        <path d="M8 2v-4h2v4h-2z" />
-                    </svg> */}
                     <img src='/images/Shopping Bag.png'></img>
                 </button>
 

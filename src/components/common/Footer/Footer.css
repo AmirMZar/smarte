@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 200px; */
-    /* background-color: #b5efef; رنگ پس‌زمینه */
     padding: 20px 0;
     width: 100%;
     background-image: url('/images/Rectangle 14.png');
@@ -20,13 +18,13 @@
   
   .footer-logo img {
     max-width: 115px;
-    margin-bottom: 20px; /* فاصله پایین لوگو */
+    margin-bottom: 20px; 
   }
   
   .footer-content {
     display: flex;
-    flex-direction: column; /* چیدمان عمودی */
-    align-items: flex-start; /* تراز به سمت چپ */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
   
   .footer-buttons {
@@ -37,11 +35,11 @@
   }
   
   .footer-button {
-    background-color: #0a7f7f; /* پس‌زمینه نیمه شفاف */
+    background-color: #0a7f7f; 
     border: 1px solid #fff;
     color: white;
     border: none;
-    border-radius: 50%; /* دکمه‌های گرد */
+    border-radius: 50%; 
     width: 30px;
     height: 30px;
     display: flex;
@@ -49,11 +47,11 @@
     align-items: center;
     cursor: pointer;
     font-size: 20px;
-    transition: background-color 0.3s ease; /* انیمیشن برای تغییر رنگ */
+    transition: background-color 0.3s ease; 
   }
   
   .footer-button:hover {
-    background-color: #0056b3; /* تغییر رنگ دکمه در هنگام هاور */
+    background-color: #0056b3; 
   }
   
   .footer-text {
@@ -75,32 +73,32 @@
   }
   .footer-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* دو ستون مساوی */
-    column-gap: 20px; /* فاصله بین ستون‌ها */
-    row-gap: 5px; /* فاصله بین ردیف‌ها */
-    list-style-type: none; /* حذف نقاط پیش‌فرض */
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 20px; 
+    row-gap: 5px; 
+    list-style-type: none; 
     padding: 0;
     margin-right: auto;
     margin-top: -125px;
     padding-left: 340px;
-    text-align: right; /* راست‌چین کردن کل لیست */
+    text-align: right;
   }
   
   .footer-list li {
     position: relative;
-    padding-right: 0; /* حذف فاصله بین نقطه و متن */
+    padding-right: 0;
     font-size: 15px;
   }
   
   .footer-list li::before {
-    content: '•'; /* نقطه قبل از آیتم */
+    content: '•'; 
     position: absolute;
-    right: -10px; /* تنظیم موقعیت نقطه */
-    color: #000; /* رنگ نقطه */
+    right: -10px; 
+    color: #000; 
   }
   
   
-  /* استایل جدید برای کادر تصویر */
+ 
 .image-box {
   height: 119px;
   margin-top: -105px;
@@ -111,7 +109,7 @@
   .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* تصویر متناسب با کادر */
+    object-fit: cover;
   }
   .footer-rights-box {
     width: 100%;
@@ -119,14 +117,14 @@
   text-align: center;
   padding: 15px 0;
   border-top: 1px solid #ddd;
-  /* margin-top: 20px; */
+  
   position: relative;
   top: 20px;
   }
   
   .footer-rights {
-    font-size: 14px; /* اندازه فونت */
-    color: #ffffff; /* رنگ متن */
+    font-size: 14px; 
+    color: #ffffff;
   }
   
   

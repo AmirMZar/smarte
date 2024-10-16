@@ -1,19 +1,19 @@
-/* استایل برای بخش عنوان */
+
 .title-container {
     background-color: #ffffff;
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* برای وسط قرار دادن محتوا */
+    justify-content: center; 
     border-radius: 8px;
     width: fit-content;
-    margin: 0 auto; /* برای وسط قرار دادن کل بلوک در صفحه */
+    margin: 0 auto; 
 }
 
 .title {
     font-size: 22px;
     font-weight: bold;
-    margin-right: 10px; /* فاصله بین تایتل و دایره */
+    margin-right: 10px; 
 }
 
 .circle {
@@ -27,35 +27,35 @@
 }
 
 .circle-text {
-    color: #10c6c6; /* رنگ متن داخل دایره */
+    color: #10c6c6; 
     font-weight: bold;
     font-size: 16px;
 }
 
-/* استایل برای زیرعنوان */
+
 .subtitle {
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-top: 5px; /* فاصله از بخش بالا */
+    margin-top: 5px; 
     font-size: 16px;
     color: gray;
 }
 
-/* استایل برای گالری */
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* چهار ستون برای گالری */
-    gap: 10px; /* فاصله بین کادرها */
-    margin: 20px auto; /* برای قرار گرفتن گالری در وسط صفحه */
-    max-width: 1000px; /* حداکثر عرض گالری */
-    padding: 10px; /* فاصله داخلی */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    margin: 20px auto; 
+    max-width: 1000px;
+    padding: 10px; 
 }
 
-/* استایل برای مربع ها */
+
 .square {
     /* background-color: #333; */
-    height: 250px; /* ارتفاع و عرض یکسان برای مربع */
+    height: 250px; 
     width: 250px;
     border-radius: 8px;
     display: flex;
@@ -69,8 +69,8 @@
 
 .rectangle {
     /* background-color: #10c6c6; */
-    height: 180px; /* ارتفاع مستطیل */
-    grid-column: span 2; /* مستطیل دو ستون را اشغال می‌کند */
+    height: 180px; 
+    grid-column: span 2; 
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -84,16 +84,16 @@
     height: 100%; 
     width: 100%;
 }
-/* استایل برای توضیحات زیر تصاویر */
+
 .image-caption {
     position: absolute;
-    bottom: 10px; /* موقعیت متن از پایین تصویر */
+    bottom: 10px; 
     /* left: 0; */
     width: 90%;
     text-align: center;
     font-size: 13px;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.251); /* پس‌زمینه شفاف برای بهتر خواندن متن */
+    background-color: rgba(0, 0, 0, 0.251); 
     padding: 5px 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -104,20 +104,20 @@
     bottom: 49px;
 }
 
-/* تنظیمات گالری برای دستگاه‌های کوچکتر */
+
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: 1fr; /* گالری در صفحات کوچک‌تر به یک ستون تبدیل می‌شود */
-        max-width: 100%; /* عرض 100% در صفحات کوچک */
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
     }
 
     .rectangle, .square {
-        grid-column: span 1; /* کادرها در صفحات کوچک‌تر فقط یک ستون اشغال می‌کنند */
+        grid-column: span 1; 
     }
 }
 
   
-  /* استایل برای overlay */
+  
   .overlay {
     position: absolute;
     top: 3px;
@@ -150,16 +150,16 @@
     cursor: url(images/Vector.png),auto;
   }
   .image-container:hover img {
-    opacity: 0.8; /* تصویر محو می‌شود */
+    opacity: 0.8; 
    
   }
   
   .image-container:hover .overlay {
-    opacity: 1; /* overlay نمایش داده می‌شود */
+    opacity: 1; 
    
   }
   .image-container:hover .overlay-rectangle {
-    opacity: 1; /* overlay نمایش داده می‌شود */
+    opacity: 1; 
    
   }
   
@@ -172,35 +172,35 @@
     cursor: url(images/Vector.png),auto;
     border-radius: 5px;
   }
-/* استایل دکمه مشاهده بیشتر */
+
 .button-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* قرار دادن دکمه در مرکز */
-    margin-top: 20px; /* فاصله از بخش بالا */
+    justify-content: center; 
+    margin-top: 20px; 
 }
 
 .view-more-btn {
     background-color: transparent;
     border: none;
-    color: #6c757d; /* رنگ خاکستری */
+    color: #6c757d; 
     font-size: 15px;
     cursor: pointer;
     display: flex;
-    align-items: center; /* متن و فلش را در یک خط وسط‌چین می‌کند */
-    transition: color 0.3s ease; /* اضافه کردن انیمیشن نرم برای تغییر رنگ */
+    align-items: center; 
+    transition: color 0.3s ease; 
 }
 
 .view-more-btn:hover {
-    color: #5a6268; /* رنگ تیره‌تر در حالت هاور */
+    color: #5a6268; 
 }
 
 .arrow {
     font-size: 17px;
-    margin: 5px; /* فاصله بین فلش و متن */
-    color: #6c757d; /* رنگ خاکستری فلش */
+    margin: 5px; 
+    color: #6c757d; 
 }
 
 .arrow:hover {
-    color: #5a6268; /* تغییر رنگ فلش هم در حالت هاور */
+    color: #5a6268; 
 }

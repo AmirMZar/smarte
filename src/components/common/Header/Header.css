@@ -3,9 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  /* background-color: #ffffff; رنگ پس‌زمینه */
   margin-top: 25px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); اضافه کردن سایه */
 }
 
 .header-left {
@@ -28,31 +26,31 @@
 }
 
 .header-title-container {
-  position: relative; /* برای قرار دادن خط زیر عنوان */
-  cursor: pointer; /* تغییر نشانگر ماوس */
-  padding: 10px 0; /* فاصله عمودی برای عناوین */
-  transition: color 0.3s; /* انیمیشن تغییر رنگ */
+  position: relative; 
+  cursor: pointer; 
+  padding: 10px 0; 
+  transition: color 0.3s; 
 }
 
 .header-title {
-  margin: 0 15px; /* فاصله بین عناوین */
-  font-size: 16px; /* اندازه فونت عناوین */
-  color: #333; /* رنگ متن عنوان */
-  transition: color 0.3s; /* انیمیشن تغییر رنگ */
+  margin: 0 15px; 
+  font-size: 16px; 
+  color: #333; 
+  transition: color 0.3s;
 }
 
 .header-title:hover {
-  color: #10c6c6; /* تغییر رنگ هنگام هاور */
+  color: #10c6c6; 
 }
 
 .orange-line {
   position: absolute;
-  width: 100%; /* عرض کامل عنوان */
-  height: 3px; /* ارتفاع خط */
+  width: 100%; 
+  height: 3px; 
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, orange 50%, rgba(255, 255, 255, 0) 100%); /* محو شدن به سفید در طرفین */
-  bottom: -5px; /* موقعیت آن را زیر عنوان قرار می‌دهد */
-  left: 0; /* تراز به سمت چپ */
-  border-radius: 30px; /* گرد کردن گوشه‌های خط */
+  bottom: -5px;
+  left: 0; 
+  border-radius: 30px; 
 }
 
 
@@ -61,44 +59,43 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px; /* اندازه فونت دکمه‌ها */
-  margin: 0 5px; /* فاصله بین دکمه‌ها */
-  display: flex; /* برای قرار دادن آیکون و متن در کنار هم */
-  align-items: center; /* عمودی وسط‌چینی آیکون و متن */
-  padding: 5px 10px; /* فاصله داخلی */
-  border-radius: 15px; /* گرد کردن گوشه‌ها */
-  transition: background-color 0.3s; /* انیمیشن تغییر رنگ پس‌زمینه */
+  font-size: 16px; 
+  margin: 0 5px; 
+  display: flex; 
+  align-items: center; 
+  padding: 5px 10px;
+  border-radius: 15px; 
+  transition: background-color 0.3s;
 }
 
 .nav-button:hover {
-  background-color: rgba(16, 198, 198, 0.2); /* تغییر رنگ پس‌زمینه هنگام هاور */
+  background-color: rgba(16, 198, 198, 0.2); 
 }
 
 .account-button {
   display: flex;
   align-items: center;
-  border: 1px solid transparent; /* رنگ border */
+  border: 1px solid transparent; 
   background-color: #10c6c6;
   color: #ffffff;
 }
 
 .account-icon {
-  width: 20px; /* اندازه آیکون انسان */
-  height: 20px; /* اندازه آیکون انسان */
-  margin-right: 5px; /* فاصله بین آیکون و متن */
+  width: 20px; 
+  height: 20px;
+  margin-right: 5px;
 }
 
 .logo {
-  height: 50px; /* ارتفاع لوگو */
-}
+  height: 50px; }
 
 .heart-icon,
 .cart-icon {
-  width: 25px; /* اندازه آیکون‌ها */
-  height: 25px; /* اندازه آیکون‌ها */
+  width: 25px; 
+  height: 25px; 
 }
 
 .cart-button:hover,
 .heart-button:hover {
-  background-color: rgba(16, 198, 198, 0.2); /* تغییر رنگ پس‌زمینه هنگام هاور */
+  background-color: rgba(16, 198, 198, 0.2); 
 }

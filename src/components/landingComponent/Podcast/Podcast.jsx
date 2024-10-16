@@ -1,7 +1,7 @@
 // Podcast.tsx
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import PodcastCard from './PodcastCard/PodcastCard'; // وارد کردن کامپوننت جدید
+import PodcastCard from './PodcastCard/PodcastCard'; 
 import './Podcast.css';
 
 const Podcast = () => {
@@ -10,12 +10,12 @@ const Podcast = () => {
             <div className="podcast-container">
                 <div className="podcast-title">پادکست ها</div>
                 <div className="podcast-circle">
-                    <span className="podcast-circle-text"></span> {/* متن داخل دایره */}
+                    <span className="podcast-circle-text"></span> 
                 </div>
             </div>
             <div className="subtitle">مجموعه‌ای از تمام آنچه شما نیاز دارید</div>
 
-            {/* استفاده از PodcastCard */}
+           
             <PodcastCard
                 date="21 مهر 1403"
                 title="شروع یادگیری توسعه وب با ری اکت"
