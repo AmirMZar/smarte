@@ -1,8 +1,9 @@
-import HeroSection from "../../components/landingComponent/HeroSection";
-
+import NewsArticles from "../../components/landingComponent/NewsArticles/NewsArticles"
+import Podcast from "../../components/landingComponent/Podcast/Podcast"
 const Landing = () => {
     return ( <>
-        <HeroSection/>
+        <NewsArticles/>
+        <Podcast/>
     </> );
 }
  
