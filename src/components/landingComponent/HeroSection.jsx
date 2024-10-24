@@ -1,7 +1,9 @@
 const HeroSection = () => {
-    return ( <>
-        hello
-    </> );
+    return ( 
+    
+        <>hello</>
+       
+     );
 }
  
 export default HeroSection;
